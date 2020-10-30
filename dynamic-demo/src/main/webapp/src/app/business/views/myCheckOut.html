@@ -1,0 +1,35 @@
+<div class="imc-header">
+    {{header.label}}
+</div>
+<div class="imc-content">
+    <table class="imc-table">
+        <thead>
+        <tr class="bg-info">
+            <th class="col-sm-2" ng-bind="tableHead.number"></th>
+            <th class="col-sm-2" ng-bind="tableHead.name"></th>
+            <th class="col-sm-2" ng-bind="tableHead.version"></th>
+            <th class="col-sm-2" ng-bind="tableHead.state"></th>
+            <th class="col-sm-2 gly-position">
+                <span ng-bind="tableHead.container"></span>
+                <i class="glyphicon glyphicon-question-sign" title="{{title_tips}}"></i>
+            </th>
+            <th class="col-sm-2" ng-bind="tableHead.modifytime"></th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="items in tableBody" class="active">
+            <th class="col-sm-2">
+                <a href="{{items.objUrl}}" target="_blank" ng-bind="items.number"></a>
+            </th>
+            <th class="col-sm-2">
+                <a href="{{items.objUrl}}" target="_blank" ng-bind="items.name"></a>
+            </th>
+            <th class="col-sm-2" ng-bind="items.version"></th>
+            <th class="col-sm-2" ng-bind="items.state"></th>
+            <th class="col-sm-2" ng-bind="items.container"></th>
+            <th class="col-sm-2" ng-bind="items.modifytime"></th>
+        </tr>
+        </tbody>
+    </table>
+</div>

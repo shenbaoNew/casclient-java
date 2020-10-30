@@ -1,0 +1,69 @@
+<div class="imc-header">
+    {{header.label}}
+</div>
+<div class="imc-content">
+    <div id="my-WT-object">
+        <form>
+            <div class="params-Information">
+                <label class="wid-132">{{tableHead.number}}</label>
+                <input type="text" ng-model="inNumber">
+            </div>
+            <div class="params-Information">
+                <label class="wid-132">{{tableHead.name}}</label>
+                <input type="text" ng-model="inName">
+            </div>
+            <div class="check-size">
+                <label>{{pageText.type}}</label>
+                <label>
+                    <input type="checkbox" value="searchPart" ng-model="inSearchPart">
+                    <span>{{pageText.parts}}</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="searchDoc" ng-model="inSearchDoc">
+                    <span>{{pageText.imgTxt}}</span>
+                </label>
+            </div>
+            <div class="form-btn">
+                <button ng-click="searchObject()">{{pageText.search}}</button>
+                <button type="reset" ng-click="revertSearch()">{{pageText.revert}}</button>
+            </div>
+        </form>
+        <p>{{pageText.result}}</p>
+        <table class="imc-table">
+            <thead>
+            <tr class="bg-info">
+                <th class="col-sm-2" ng-bind="tableHead.number"></th>
+                <th class="col-sm-2" ng-bind="tableHead.name"></th>
+                <th class="col-sm-2" ng-bind="tableHead.version"></th>
+                <th class="col-sm-2" ng-bind="tableHead.state"></th>
+                <th class="col-sm-2 gly-position">
+                    <span ng-bind="tableHead.container"></span>
+                    <i class="glyphicon glyphicon-question-sign" title="{{pageText.title_tips}}"></i>
+                </th>
+                <th class="col-sm-2" ng-bind="tableHead.modifytime"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="items in tableBody" class="active">
+                <th class="col-sm-2">
+                    <a href="{{items.objUrl}}" target="_blank" ng-bind="items.number"></a>
+                </th>
+                <th class="col-sm-2">
+                    <a href="{{items.objUrl}}" target="_blank" ng-bind="items.name"></a>
+                </th>
+                <th class="col-sm-2" ng-bind="items.version"></th>
+                <th class="col-sm-2" ng-bind="items.state"></th>
+                <th class="col-sm-2" ng-bind="items.container"></th>
+                <th class="col-sm-2" ng-bind="items.modifytime"></th>
+
+            </tr>
+            </tbody>
+        </table>
+        <div class="footer" ng-show="allPage>1">
+            <span>{{pageText.pageAll}}</span><span ng-bind="allPage"></span>
+            <button ng-click="pageIndex('pre')" ng-disabled="search.indexpage==1" class="pre-button">&lt;</button>
+            <span ng-bind="search.indexpage+'/'+allPage"></span>
+            <button ng-click="pageIndex('next')" ng-disabled="search.indexpage==allPage">&gt;</button>
+        </div>
+    </div>
+</div>

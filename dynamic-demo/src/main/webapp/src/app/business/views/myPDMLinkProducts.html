@@ -1,0 +1,23 @@
+<div class="imc-header">
+    {{header.label}}
+</div>
+<div class="imc-content">
+    <table class="imc-table">
+        <thead>
+        <tr class="bg-info">
+            <th class="col-sm-4" ng-bind="tableHead.container"></th>
+            <th class="col-sm-4" ng-bind="tableHead.creator"></th>
+            <th class="col-sm-4" ng-bind="tableHead.createtime"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="items in tableBody" class="active">
+            <th class="col-sm-4">
+                <a href="{{items.containerUrl}}" target="_blank" ng-bind="items.container"></a>
+            </th>
+            <th class="col-sm-4" ng-bind="items.creator"></th>
+            <th class="col-sm-4" ng-bind="items.createtime"></th>
+        </tr>
+        </tbody>
+    </table>
+</div>

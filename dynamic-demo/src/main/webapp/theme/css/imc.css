@@ -1,0 +1,210 @@
+body {
+    padding: 0;
+}
+
+a {
+    color: #3399FF;
+}
+
+[class*=' imc-'], [class^=imc-] {
+    box-sizing: border-box;
+}
+
+.imc-wrapper {
+    max-width: 1920px;
+    min-width: 1280px;
+    margin: 0 auto;
+}
+
+.imc-header {
+    padding: 30px;
+    font-size: 20px;
+}
+
+.imc-content {
+    padding: 30px;
+}
+
+.imc-wrapper .imc-header {
+    padding: 30px;
+    width: 100%;
+}
+
+.imc-wrapper .imc-header, .imc-wrapper-create .imc-wizard {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.imc-table {
+    width: 100%;
+    max-width: 100%;
+}
+
+table thead tr th {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    cursor: default;
+    background-color: #e1e4e5;
+    outline: 0;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    font-weight: 400;
+    border-left: none;
+    border-right: 1px dotted transparent;
+    padding: 0;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    text-align: left;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+table thead tr th.gly-position {
+    position: relative;
+}
+
+table thead tr th.gly-position i {
+    color: #CCC;
+    font-size: 18px;
+    position: absolute;
+    margin: 10px 0 0 8px;
+}
+
+table tbody tr th {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-left: none;
+    border-top: none;
+    border-right: 1px dotted transparent;
+    padding: 15px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f7f8f8;
+}
+
+table tbody tr:hover {
+    background-color: #eaf6f9;
+}
+
+#my-WT-object form {
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+#my-WT-object form div.params-Information label {
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-weight: normal;
+}
+
+#my-WT-object form div.params-Information label.wid-132 {
+    width: 70px;
+}
+
+#my-WT-object form div.params-Information label.margin-15 {
+    margin-left: 18px;
+}
+
+#my-WT-object form div.check-size {
+    height: 40px;
+    line-height: 30px;
+    display: inline-flex;
+}
+
+#my-WT-object form div.check-size label {
+    font-weight: normal;
+    min-width: 70px;
+}
+
+#my-WT-object form div.check-size label input {
+    zoom: 140%;
+    vertical-align: middle;
+    margin-top: 0;
+}
+
+#my-WT-object form div.check-size label:last-child {
+    margin-left: 15px;
+    min-width: 100px;
+}
+
+#my-WT-object form div.params-Information label span {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+#my-WT-object form div.form-btn button {
+    width: 85px;
+    height: 33px;
+    border: none;
+}
+
+#my-WT-object form div.form-btn button:first-child {
+    background-color: #e41f2b;
+    border-color: #e41f2b;
+    color: #FFF;
+}
+
+#my-WT-object form div.form-btn button:last-child {
+    margin-left: 22px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    color: #333;
+}
+
+div.footer {
+    margin-top: 10px;
+}
+
+#my-WT-object div.footer button {
+    border: none;
+    background-color: #FFF;
+    color: #3787D0;
+}
+
+#my-WT-object div.footer input {
+    text-align: center;
+    width: 50px;
+}
+
+#history-cal-tasks div.footer button {
+    border: none;
+    background-color: #FFF;
+    color: #3787D0;
+}
+
+#history-cal-tasks div.footer button.pre-button, #my-WT-object div.footer button.pre-button {
+    margin-left: 15px;
+}
+
+#history-cal-tasks div.footer input {
+    text-align: center;
+    width: 50px;
+}
+
+#history-cal-tasks div.footer input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#history-cal-tasks div.footer input[type="number"] {
+    -moz-appearance: textfield;
+}
